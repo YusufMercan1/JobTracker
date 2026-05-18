@@ -1,11 +1,11 @@
 package org.example.jobtracker.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.jobapplicationtracker.dto.InterviewResponse;
-import org.example.jobapplicationtracker.model.Interview;
-import org.example.jobapplicationtracker.model.User;
-import org.example.jobapplicationtracker.repository.UserRepository;
-import org.example.jobapplicationtracker.service.InterviewService;
+import org.example.jobtracker.dto.InterviewResponse;
+import org.example.jobtracker.model.Interview;
+import org.example.jobtracker.model.User;
+import org.example.jobtracker.repository.UserRepository;
+import org.example.jobtracker.service.InterviewService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;

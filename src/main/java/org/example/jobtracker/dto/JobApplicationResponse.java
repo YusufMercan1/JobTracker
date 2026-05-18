@@ -1,6 +1,6 @@
 package org.example.jobtracker.dto;
 
-import org.example.jobapplicationtracker.model.Status;
+import org.example.jobtracker.model.Status;
 
 import java.time.LocalDate;
 

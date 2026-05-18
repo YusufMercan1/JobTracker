@@ -1,10 +1,10 @@
 package org.example.jobtracker.controller;
 
-import org.example.jobapplicationtracker.dto.DashboardResponse;
-import org.example.jobapplicationtracker.model.Status;
-import org.example.jobapplicationtracker.model.JobApplication;
-import org.example.jobapplicationtracker.service.EmailService;
-import org.example.jobapplicationtracker.service.JobApplicationService;
+import org.example.jobtracker.dto.DashboardResponse;
+import org.example.jobtracker.model.JobApplication;
+import org.example.jobtracker.model.Status;
+import org.example.jobtracker.service.EmailService;
+import org.example.jobtracker.service.JobApplicationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
