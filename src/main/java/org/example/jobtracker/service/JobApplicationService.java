@@ -160,4 +160,15 @@ public class JobApplicationService {
                 upcomingMeetings
         );
     }
+    public void saveCoverLetter(Long id, String coverLetter) {
+        JobApplication job = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Not found"));
+
+        if (!job.getUser().getUsername().equals(getCurrentUser().getUsername())) {
+            throw new RuntimeException("Unauthorized");
+        }
+
+        job.setCoverLetter(coverLetter);
+        repository.save(job);
+    }
 }
