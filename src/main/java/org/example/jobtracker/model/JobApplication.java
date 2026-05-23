@@ -39,4 +39,7 @@ public class JobApplication {
 
     @OneToMany(mappedBy = "jobApplication", cascade = CascadeType.ALL)
     private List<Interview> interviews;
+
+    @Column(columnDefinition = "TEXT")
+    private String coverLetter;
 }
