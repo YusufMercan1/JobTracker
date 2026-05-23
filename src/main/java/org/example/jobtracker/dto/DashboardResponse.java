@@ -1,0 +1,17 @@
+package org.example.jobtracker.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class DashboardResponse {
+
+    private long total;
+    private long applied;
+    private long interview;
+    private long rejected;
+    private long overdue;
+    private long upcomingDeadlines;
+    private long upcomingMeetings;
+}
